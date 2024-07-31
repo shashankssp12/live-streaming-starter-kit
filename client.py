@@ -25,7 +25,7 @@ async def audio_stream(audio_file_path, encoding, sample_rate, channels):
         url,
         extra_headers={
             # If you're testing integration with DG, add your API key here
-            "Authorization": "Token {}".format("YOUR_DG_API_KEY")
+            "Authorization": "Token {}".format("YOUR_API_KEY")
         },
     ) as ws:
         print("🟢 (1/5) Successfully opened streaming connection")
